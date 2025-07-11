@@ -1,0 +1,324 @@
+// Dark theme background and base text
+:host {
+  display: block;
+  min-height: 100vh;
+  background: #111;
+  color: #f3f3f3;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  background: #181818;
+  padding: 1.2rem 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.12);
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: #232323;
+  border-radius: 2rem;
+  padding: 0.5rem 2rem;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+}
+
+.profile-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #222;
+}
+
+.profile-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-right: 1.5rem;
+}
+
+.nav-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+  margin: 0 0.7rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #00e0ff;
+}
+
+.main-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 0 1.5rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  margin-bottom: 3.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1 1 350px;
+  min-width: 300px;
+}
+
+.hero-text h1 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: #fff;
+}
+
+.highlight {
+  color: #00e0ff;
+}
+
+.bio {
+  color: #bdbdbd;
+  font-size: 1.1rem;
+  margin-bottom: 1.1rem;
+}
+
+.project-line {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.discord-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #5865f2 60%, #00e0ff 100%);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.7rem 1.5rem;
+  border-radius: 1.5rem;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+  transition: background 0.2s, color 0.2s;
+}
+.discord-btn:hover {
+  background: linear-gradient(90deg, #00e0ff 0%, #5865f2 100%);
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.1rem;
+  margin-top: 0.5rem;
+}
+.social-icons a {
+  color: #bdbdbd;
+  font-size: 1.5rem;
+  transition: color 0.2s;
+}
+.social-icons a:hover {
+  color: #00e0ff;
+}
+
+// Placeholder icon styles (replace with SVG or icon font as needed)
+.icon-youtube::before {
+  content: '\25B6'; /* play symbol */
+  font-size: 1.3em;
+}
+.icon-twitter::before {
+  content: 'T';
+  font-weight: bold;
+}
+.icon-linkedin::before {
+  content: 'in';
+  font-weight: bold;
+}
+.icon-github::before {
+  content: '<>';
+  font-weight: bold;
+}
+
+.hero-image {
+  flex: 0 0 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 1.5rem;
+  object-fit: cover;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.25);
+  border: 3px solid #232323;
+}
+
+.work-experience {
+  background: #181818;
+  border-radius: 1.5rem;
+  padding: 2rem 2rem 1.5rem 2rem;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);
+  margin-bottom: 2rem;
+}
+.work-experience h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+.work-desc {
+  color: #bdbdbd;
+  margin-bottom: 1.2rem;
+}
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.experience-card {
+  background: #232323;
+  border-radius: 1rem;
+  padding: 1.1rem 1.5rem;
+  color: #e0e0e0;
+  box-shadow: 0 1px 8px 0 rgba(0,0,0,0.10);
+}
+.role {
+  font-weight: 600;
+  color: #00e0ff;
+}
+.company {
+  font-weight: 500;
+  color: #fff;
+  margin-left: 0.5rem;
+}
+
+.about {
+  background: #181818;
+  border-radius: 1.5rem;
+  padding: 2rem 2rem 1.5rem 2rem;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);
+  margin-bottom: 2rem;
+}
+.about h2 {
+  color: #00e0ff;
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+.about-desc {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.projects {
+  background: #181818;
+  border-radius: 1.5rem;
+  padding: 2rem 2rem 1.5rem 2rem;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);
+  margin-bottom: 2rem;
+}
+.projects h2 {
+  color: #00e0ff;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.project-card {
+  background: #232323;
+  border-radius: 1rem;
+  padding: 1.1rem 1.5rem;
+  color: #e0e0e0;
+  box-shadow: 0 1px 8px 0 rgba(0,0,0,0.10);
+  flex: 1 1 260px;
+  min-width: 220px;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.project-card h3 {
+  color: #00e0ff;
+  font-size: 1.15rem;
+  margin-bottom: 0.3rem;
+}
+
+// Section spacing
+section {
+  margin-bottom: 2.5rem;
+}
+
+// Responsive styles
+@media (max-width: 900px) {
+  .main-content {
+    padding: 2rem 0.5rem 0 0.5rem;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .hero-image {
+    margin-top: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .navbar-content {
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 0.7rem 1rem;
+  }
+  .main-content {
+    padding: 1rem 0.2rem 0 0.2rem;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  .hero-image img {
+    width: 120px;
+    height: 120px;
+  }
+  .work-experience {
+    padding: 1rem 0.5rem 0.7rem 0.5rem;
+  }
+}
+
+// Responsive for projects
+@media (max-width: 900px) {
+  .project-list {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .project-card {
+    max-width: 100%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.social-icons a .icon-svg {
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), filter 0.25s, fill 0.25s;
+}
+.social-icons a:hover .icon-svg {
+  transform: scale(1.22) rotate(-8deg);
+  filter: drop-shadow(0 2px 8px #00e0ff88);
+}
+.social-icons a[aria-label="GitHub"]:hover .icon-svg path {
+  fill: #fff;
+}
+.social-icons a[aria-label="Twitter"]:hover .icon-svg path {
+  fill: #1da1f2;
+}
+.social-icons a[aria-label="LinkedIn"]:hover .icon-svg path {
+  fill: #0077b5;
+}
